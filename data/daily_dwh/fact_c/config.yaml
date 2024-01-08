@@ -1,0 +1,4 @@
+destination_table: alpine-life-350508.project_x_dwh.fact_c
+write_disposition: WRITE_TRUNCATE
+external_task_dependencies: []
+internal_task_dependencies: []

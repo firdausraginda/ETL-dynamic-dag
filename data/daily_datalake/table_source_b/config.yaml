@@ -1,0 +1,5 @@
+destination_table: alpine-life-350508.project_x_datalake.table_source_b
+write_disposition: WRITE_TRUNCATE
+partition_column: partition_date
+external_task_dependencies: []
+internal_task_dependencies: []
