@@ -1,5 +1,8 @@
 # dynamic-airflow-dag-task
 
+## dynamic DAG graph
+![dynamic DAG graph](./dynamic-dag-graph.jpg)
+
 ## command to handle error in cloudshell
 
 * git clone from github repo with access token, [link](https://stackoverflow.com/questions/42148841/github-clone-with-oauth-access-token):
