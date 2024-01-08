@@ -1,0 +1,48 @@
+[2023-12-28T09:06:07.767+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T09:06:07.772+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T09:06:07.772+0000] {taskinstance.py:2171} INFO - Starting attempt 24 of 26
+[2023-12-28T09:06:07.780+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2023-12-27 00:00:00+00:00
+[2023-12-28T09:06:07.796+0000] {standard_task_runner.py:60} INFO - Started process 970 to run task
+[2023-12-28T09:06:07.810+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'scheduled__2023-12-27T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmpbzhie32t']
+[2023-12-28T09:06:07.813+0000] {standard_task_runner.py:88} INFO - Job 38: Subtask table_source_a
+[2023-12-28T09:06:07.900+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [running]> on host 64bb4a2d8189
+[2023-12-28T09:06:08.015+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2023-12-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='24' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-27T00:00:00+00:00'
+[2023-12-28T09:06:10.164+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 80, in process_datalake
+    load_query_result_to_bq(dict_config["sql"], dict_config["write_disposition"],
+  File "/opt/airflow/dags/etl_to_datalake.py", line 62, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 59, in load_query_result_to_bq
+    query_job.result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 952, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Could not cast literal '{{ data_interval_start.in_timezone("Asia/Jakarta") | ds }}' to type TIMESTAMP at [4:21]
+
+Location: US
+Job ID: 60b8f155-1039-4f82-9c1a-1f4069ddb504
+
+[2023-12-28T09:06:10.192+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20231227T000000, start_date=20231228T090607, end_date=20231228T090610
+[2023-12-28T09:06:10.216+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 38 for task table_source_a (400 Could not cast literal '{{ data_interval_start.in_timezone("Asia/Jakarta") | ds }}' to type TIMESTAMP at [4:21]
+
+Location: US
+Job ID: 60b8f155-1039-4f82-9c1a-1f4069ddb504
+; 970)
+[2023-12-28T09:06:10.254+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2023-12-28T09:06:10.316+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+[2024-01-08T05:05:37.716+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-01-08T05:05:37.726+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2024-01-07T00:00:00+00:00 [queued]>
+[2024-01-08T05:05:37.727+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 4
+[2024-01-08T05:05:37.745+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2024-01-07 00:00:00+00:00
+[2024-01-08T05:05:37.756+0000] {standard_task_runner.py:60} INFO - Started process 259 to run task
+[2024-01-08T05:05:37.766+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'scheduled__2024-01-07T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmp6lkfg2w3']
+[2024-01-08T05:05:37.768+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask table_source_a
+[2024-01-08T05:05:37.869+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a scheduled__2024-01-07T00:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T05:05:37.976+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T00:00:00+00:00'
+[2024-01-08T05:05:37.996+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T05:05:38.065+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T05:05:38.066+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 60, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 56, in load_query_result_to_bq
+    query_job = bq_client.query(dict_config["query"], job_config=job_config)
+KeyError: 'query'
+[2024-01-08T05:05:38.078+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20240107T000000, start_date=20240108T050537, end_date=20240108T050538
+[2024-01-08T05:05:38.095+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task table_source_a ('query'; 259)
+[2024-01-08T05:05:38.139+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-08T05:05:38.163+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

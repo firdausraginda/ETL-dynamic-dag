@@ -1,0 +1,36 @@
+[2023-12-28T08:41:07.168+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T08:41:07.172+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T08:41:07.172+0000] {taskinstance.py:2171} INFO - Starting attempt 13 of 15
+[2023-12-28T08:41:07.178+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2023-12-27 00:00:00+00:00
+[2023-12-28T08:41:07.182+0000] {standard_task_runner.py:60} INFO - Started process 561 to run task
+[2023-12-28T08:41:07.186+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'scheduled__2023-12-27T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmppko6memp']
+[2023-12-28T08:41:07.187+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask table_source_a
+[2023-12-28T08:41:07.225+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [running]> on host 64bb4a2d8189
+[2023-12-28T08:41:07.280+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2023-12-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='13' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-27T00:00:00+00:00'
+[2023-12-28T08:41:07.298+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-12-28T08:41:07.303+0000] {logging_mixin.py:188} INFO - service_account_json: {'type': 'service_account', 'project_id': 'deft-beacon-358408', 'private_key_id': '7b36e42667f9a1c648501d9383bfd7692e3a3e8b', 'private_key': '-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCfDjQZNwI51qA\nw+cV5oeyojg9/V+yffiKVpBnSu8m7sycOQegxkXHsSuTRNwx3c51RUOL3BhmzbyA\nuuwLPIxPh3b8dB0IM+SZOwqi5AmrRqNzJX6m6ZuAvVQlqyD4z771MMqkxNQFKvcM\nb/nZbalLOXedp8is3eOwBn4PcIkJA6dslDqyGVr4fdmppRr6RykAWOmHhXUG4pZ/\nelNCtPNEaktkFML2ewW55QxHxJyRAz7m2s5SgJXhc6kXGb4rTf6Kzt207ExCnSlY\ndbognVxHZdJlzVzuEMfngi4u2sauuYpnph5GVUF5tqbWmlc2H6RVfI1qcGMCkKAi\njkuD+d0dAgMBAAECggEAA5ecywiZ4dY4Hzm/GnH0HrINXOPBsT/PZ+q6ZxYEvdDa\nWaZaBDe1UT9uAR3b/VXN+u+JFFu/3aI+MZiCRKDdLJjhcz9Hy/99YPEsvJ5+qTm4\nSieuo7Gb7DBTDhEPnljj+45np8x06BWHk6S71i7G2jtZAMH5HGxKyNUN3gYjmdV9\nspvkZGJ61PTjJlHdFekPOMiKE7hGnJyLIT3VXAYarcdzJxsKoKubi8OtN0P1nPli\nezeYWSbJu3c7xmBoJO2THNDQDDXGU4/U+AqGLmzSONFFKXlfPRPCvGZyzDQCY96D\nW5l1kEudZ8bKUETStC6h/IGWDci50O48Qj8HhXEphwKBgQDluXEXDr2hMNSx6Dqb\nkDoVfPiSNpCwfD6wRycyAxBJnz4ZyTA2+A3Sc+NL+lC3BTG3OkdkALB2OpoCHOdC\npwypef8QA3elETHcOlc30Kcc32we7XUg2noLSniivwwVDWmmy7cpYK3kHa/a3wlA\nn/uLvD25qvvkWmYmYWBHWbr/xwKBgQDYuvFwxVQRB7GXlg8oObJSdmuvWBJpNG2a\nV9frdNa9wsDGXxuWvBOygepH4BQ58R6E5z8FEqgSfHSDNqSStXwCnEzsq61ttEsm\nO04mwEI+ovsUfTOaaJrmc/h6fG5zDpA81MFY+vnM8I1H4i2XYOHCtQpCzcbYnBm6\neOW9AdBD+wKBgCdCSdFm84FYlwDQbzOmskZ51QEn0hJXKV92yXwCigYK8NH3UAYU\n3kfZBj81yBV/DcACdbDhbUbHPQqfZeY+JivQbYaPESNkjODWF5GyVtzYUeH3Ms0q\niTDkyTkG7UmrwSKALg0kOJODf0ooU6x3qsV2phXU4rdju5FTkuCetRaBAoGAWkz5\n0AzHzBiyjAA/7HitreIdV/+QHDl1+Trkgfw6hPIiNAToj9NpOZUbsjrQ8pteJe3b\nuhdd4+Xq/cjEpUPsmYHaIzoclnrqXNGU7FxqvYJWruDDoXA4KhDj1NUHh/TncBEN\nRi+76QHJO8wnRs1dAy0/SzpFwXa42ZMJ1chtqAUCgYBDbpn1zMvNg/hETOHeCm6L\n0mtUMxoIaOLE+fNUsMfsbSiCQTTyC0rD7z1D7cp6O0xMcd946Ey0p3epZ2cZq/dC\nIXKoU8YlnIOkZWVKmzLbMMUDGtjK80wKTdongXt+EYh7g9tqYGFpypzOShfW/mP2\n48ykUqAkza4jXldVGJF0Xw==\n-----END PRIVATE KEY-----\n', 'client_email': 'agi-273@deft-beacon-358408.iam.gserviceaccount.com', 'client_id': '105707316737329801228', 'auth_uri': 'https://accounts.google.com/o/oauth2/auth', 'token_uri': 'https://oauth2.googleapis.com/token', 'auth_provider_x509_cert_url': 'https://www.googleapis.com/oauth2/v1/certs', 'client_x509_cert_url': 'https://www.googleapis.com/robot/v1/metadata/x509/agi-273%40deft-beacon-358408.iam.gserviceaccount.com', 'universe_domain': 'googleapis.com'}
+[2023-12-28T08:41:07.396+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 78, in process_datalake
+    load_query_result_to_bq(dict_config["sql"], dict_config["write_disposition"],
+  File "/opt/airflow/dags/etl_to_datalake.py", line 54, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 44, in load_query_result_to_bq
+    job_config = bigquery.QueryJobConfig(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 337, in __init__
+    super(QueryJobConfig, self).__init__("query", **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 163, in __init__
+    setattr(self, prop, val)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 168, in __setattr__
+    raise AttributeError(
+AttributeError: Property destination_table is unknown for <class 'google.cloud.bigquery.job.query.QueryJobConfig'>.
+[2023-12-28T08:41:07.427+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20231227T000000, start_date=20231228T084107, end_date=20231228T084107
+[2023-12-28T08:41:07.446+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 27 for task table_source_a (Property destination_table is unknown for <class 'google.cloud.bigquery.job.query.QueryJobConfig'>.; 561)
+[2023-12-28T08:41:07.488+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2023-12-28T08:41:07.530+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

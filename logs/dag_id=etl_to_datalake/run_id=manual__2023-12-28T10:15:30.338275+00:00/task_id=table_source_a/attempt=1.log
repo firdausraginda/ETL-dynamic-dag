@@ -1,0 +1,30 @@
+[2023-12-28T10:15:36.796+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a manual__2023-12-28T10:15:30.338275+00:00 [queued]>
+[2023-12-28T10:15:36.813+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a manual__2023-12-28T10:15:30.338275+00:00 [queued]>
+[2023-12-28T10:15:36.814+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2023-12-28T10:15:36.828+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2023-12-28 10:15:30.338275+00:00
+[2023-12-28T10:15:36.842+0000] {standard_task_runner.py:60} INFO - Started process 713 to run task
+[2023-12-28T10:15:36.880+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'manual__2023-12-28T10:15:30.338275+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmpzeolh1oa']
+[2023-12-28T10:15:36.884+0000] {standard_task_runner.py:88} INFO - Job 51: Subtask table_source_a
+[2023-12-28T10:15:37.093+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a manual__2023-12-28T10:15:30.338275+00:00 [running]> on host 64bb4a2d8189
+[2023-12-28T10:15:37.402+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2023-12-28T10:15:30.338275+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-28T10:15:30.338275+00:00'
+[2023-12-28T10:15:37.498+0000] {logging_mixin.py:188} INFO - ----DEBUG query:
+SELECT DATE(last_update_date) AS partition_date,
+       'a' AS col_str,
+       3 AS col_int
+FROM `bigquery-public-data.austin_311.311_service_requests`
+LIMIT 10
+[2023-12-28T10:15:37.566+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-12-28T10:15:41.620+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2021, 2, 25), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.627+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2023, 5, 19), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.630+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2023, 12, 18), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.631+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2021, 2, 11), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.634+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2017, 4, 10), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.636+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2014, 4, 21), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.638+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2020, 9, 18), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.640+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2021, 12, 14), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.640+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2015, 2, 2), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.641+0000] {logging_mixin.py:188} INFO - ----DEBUG query_result: Row((datetime.date(2020, 11, 12), 'a', 3), {'partition_date': 0, 'col_str': 1, 'col_int': 2})
+[2023-12-28T10:15:41.646+0000] {python.py:201} INFO - Done. Returned value was: None
+[2023-12-28T10:15:41.755+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20231228T101530, start_date=20231228T101536, end_date=20231228T101541
+[2023-12-28T10:15:41.906+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2023-12-28T10:15:42.452+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

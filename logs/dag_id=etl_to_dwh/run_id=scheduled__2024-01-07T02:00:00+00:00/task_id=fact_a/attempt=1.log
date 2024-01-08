@@ -1,0 +1,86 @@
+[2024-01-08T06:34:13.784+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T06:34:13.797+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T06:34:13.798+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T06:34:13.821+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): fact_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T06:34:13.835+0000] {standard_task_runner.py:60} INFO - Started process 52 to run task
+[2024-01-08T06:34:13.847+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'fact_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmpa1omwhk1']
+[2024-01-08T06:34:13.849+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask fact_a
+[2024-01-08T06:34:13.962+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T06:34:14.126+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='fact_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T06:34:14.148+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T06:34:14.244+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T06:34:14.248+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_dwh.py", line 60, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_dwh.py", line 56, in load_query_result_to_bq
+    query_job = bq_client.query(dict_config["sql_query"], job_config=job_config)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 3387, in query
+    return _job_helpers.query_jobs_insert(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/_job_helpers.py", line 158, in query_jobs_insert
+    future = do_query()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/_job_helpers.py", line 135, in do_query
+    query_job._begin(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1379, in _begin
+    super(QueryJob, self)._begin(client=client, retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 723, in _begin
+    api_response = client._call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 818, in _call_api
+    return call()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 479, in api_request
+    data = json.dumps(data)
+  File "/usr/local/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PosixPath is not JSON serializable
+[2024-01-08T06:34:14.271+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_dwh, task_id=fact_a, execution_date=20240107T020000, start_date=20240108T063413, end_date=20240108T063414
+[2024-01-08T06:34:14.289+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 39 for task fact_a (Object of type PosixPath is not JSON serializable; 52)
+[2024-01-08T06:34:14.310+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-08T06:34:14.341+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-08T07:21:14.574+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:21:14.590+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:21:14.591+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:21:14.614+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): fact_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T07:21:14.625+0000] {standard_task_runner.py:60} INFO - Started process 158 to run task
+[2024-01-08T07:21:14.632+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'fact_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmptw6tkxlh']
+[2024-01-08T07:21:14.634+0000] {standard_task_runner.py:88} INFO - Job 59: Subtask fact_a
+[2024-01-08T07:21:14.711+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:21:14.814+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='fact_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T07:21:14.829+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T07:21:14.888+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T07:21:17.533+0000] {logging_mixin.py:188} INFO - successfully load data to alpine-life-350508.project_x_dwh.fact_a
+[2024-01-08T07:21:17.533+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-08T07:21:17.547+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_dwh, task_id=fact_a, execution_date=20240107T020000, start_date=20240108T072114, end_date=20240108T072117
+[2024-01-08T07:21:17.582+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-08T07:21:17.608+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-08T07:30:22.759+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:30:22.789+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:30:22.790+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:30:22.838+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): fact_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T07:30:22.853+0000] {standard_task_runner.py:60} INFO - Started process 356 to run task
+[2024-01-08T07:30:22.867+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'fact_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmpb_gkz9_3']
+[2024-01-08T07:30:22.869+0000] {standard_task_runner.py:88} INFO - Job 67: Subtask fact_a
+[2024-01-08T07:30:22.987+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.fact_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:30:23.143+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='fact_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T07:30:23.171+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T07:30:23.270+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T07:30:26.152+0000] {logging_mixin.py:188} INFO - successfully load data to alpine-life-350508.project_x_dwh.fact_a
+[2024-01-08T07:30:26.157+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-08T07:30:26.175+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_dwh, task_id=fact_a, execution_date=20240107T020000, start_date=20240108T073022, end_date=20240108T073026
+[2024-01-08T07:30:26.222+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-08T07:30:26.257+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

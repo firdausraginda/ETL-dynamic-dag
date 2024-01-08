@@ -1,0 +1,66 @@
+[2024-01-08T06:34:13.781+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T06:34:13.794+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T06:34:13.795+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T06:34:13.816+0000] {taskinstance.py:2192} INFO - Executing <Task(ExternalTaskSensor): wait_etl_to_datalake_table_source_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T06:34:13.827+0000] {standard_task_runner.py:60} INFO - Started process 51 to run task
+[2024-01-08T06:34:13.835+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'wait_etl_to_datalake_table_source_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmph0lnevcx']
+[2024-01-08T06:34:13.838+0000] {standard_task_runner.py:88} INFO - Job 38: Subtask wait_etl_to_datalake_table_source_a
+[2024-01-08T06:34:13.925+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T06:34:14.095+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='wait_etl_to_datalake_table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T06:34:14.101+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/external_task.py", line 334, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 263, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 245, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/external_task.py", line 240, in poke
+    dttm_filter = self._get_dttm_filter(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/external_task.py", line 227, in _get_dttm_filter
+    dttm = context["logical_date"] - self.execution_delta
+TypeError: unsupported operand type(s) for -: 'DateTime' and 'str'
+[2024-01-08T06:34:14.118+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_dwh, task_id=wait_etl_to_datalake_table_source_a, execution_date=20240107T020000, start_date=20240108T063413, end_date=20240108T063414
+[2024-01-08T06:34:14.136+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 38 for task wait_etl_to_datalake_table_source_a (unsupported operand type(s) for -: 'DateTime' and 'str'; 51)
+[2024-01-08T06:34:14.175+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-01-08T06:34:14.228+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-08T07:21:14.437+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:21:14.463+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:21:14.464+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:21:14.483+0000] {taskinstance.py:2192} INFO - Executing <Task(ExternalTaskSensor): wait_etl_to_datalake_table_source_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T07:21:14.494+0000] {standard_task_runner.py:60} INFO - Started process 157 to run task
+[2024-01-08T07:21:14.501+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'wait_etl_to_datalake_table_source_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmpw4_pmeeh']
+[2024-01-08T07:21:14.503+0000] {standard_task_runner.py:88} INFO - Job 58: Subtask wait_etl_to_datalake_table_source_a
+[2024-01-08T07:21:14.589+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:21:14.707+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='wait_etl_to_datalake_table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T07:21:14.712+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:22:14.787+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:23:14.840+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:24:14.913+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:25:14.993+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:26:15.055+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:27:15.114+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:28:15.137+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T01:00:00+00:00 ... 
+[2024-01-08T07:28:24.511+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-01-08T07:28:24.517+0000] {process_utils.py:131} INFO - Sending 15 to group 157. PIDs of all processes in the group: [157]
+[2024-01-08T07:28:24.517+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 157
+[2024-01-08T07:28:24.518+0000] {taskinstance.py:2451} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-01-08T07:28:24.570+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=157, status='terminated', exitcode=0, started='07:21:14') (157) terminated with exit code 0
+[2024-01-08T07:30:22.695+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:30:22.729+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-08T07:30:22.734+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:30:22.762+0000] {taskinstance.py:2192} INFO - Executing <Task(ExternalTaskSensor): wait_etl_to_datalake_table_source_a> on 2024-01-07 02:00:00+00:00
+[2024-01-08T07:30:22.773+0000] {standard_task_runner.py:60} INFO - Started process 355 to run task
+[2024-01-08T07:30:22.781+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'wait_etl_to_datalake_table_source_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmpdvyxexqm']
+[2024-01-08T07:30:22.784+0000] {standard_task_runner.py:88} INFO - Job 66: Subtask wait_etl_to_datalake_table_source_a
+[2024-01-08T07:30:22.895+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:30:23.080+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='wait_etl_to_datalake_table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-08T07:30:23.086+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T00:00:00+00:00 ... 
+[2024-01-08T07:30:23.106+0000] {base.py:293} INFO - Success criteria met. Exiting.
+[2024-01-08T07:30:23.123+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_dwh, task_id=wait_etl_to_datalake_table_source_a, execution_date=20240107T020000, start_date=20240108T073022, end_date=20240108T073023
+[2024-01-08T07:30:23.159+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-08T07:30:23.212+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

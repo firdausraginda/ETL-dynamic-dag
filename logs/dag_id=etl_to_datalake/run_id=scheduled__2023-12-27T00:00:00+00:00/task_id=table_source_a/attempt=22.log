@@ -1,0 +1,66 @@
+[2023-12-28T09:01:04.358+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T09:01:04.365+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T09:01:04.366+0000] {taskinstance.py:2171} INFO - Starting attempt 22 of 24
+[2023-12-28T09:01:04.377+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2023-12-27 00:00:00+00:00
+[2023-12-28T09:01:04.387+0000] {standard_task_runner.py:60} INFO - Started process 893 to run task
+[2023-12-28T09:01:04.393+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'scheduled__2023-12-27T00:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmpxhf91kg8']
+[2023-12-28T09:01:04.396+0000] {standard_task_runner.py:88} INFO - Job 36: Subtask table_source_a
+[2023-12-28T09:01:04.531+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a scheduled__2023-12-27T00:00:00+00:00 [running]> on host 64bb4a2d8189
+[2023-12-28T09:01:04.618+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2023-12-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='22' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-27T00:00:00+00:00'
+[2023-12-28T09:01:04.674+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-12-28T09:01:05.329+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 319, in jwt_grant
+    access_token = response_data["access_token"]
+KeyError: 'access_token'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 78, in process_datalake
+    load_query_result_to_bq(dict_config["sql"], dict_config["write_disposition"],
+  File "/opt/airflow/dags/etl_to_datalake.py", line 53, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 49, in load_query_result_to_bq
+    query_job = bq_client.query(sql, job_config=job_config)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 3387, in query
+    return _job_helpers.query_jobs_insert(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/_job_helpers.py", line 158, in query_jobs_insert
+    future = do_query()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/_job_helpers.py", line 135, in do_query
+    query_job._begin(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1379, in _begin
+    super(QueryJob, self)._begin(client=client, retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 723, in _begin
+    api_response = client._call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 818, in _call_api
+    return call()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 372, in retry_wrapped_func
+    return retry_target(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry.py", line 207, in retry_target
+    result = target()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 482, in api_request
+    response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 341, in _make_request
+    return self._do_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 379, in _do_request
+    return self.http.request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/transport/requests.py", line 537, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/credentials.py", line 175, in before_request
+    self.refresh(request)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 449, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/_client.py", line 324, in jwt_grant
+    raise new_exc from caught_exc
+google.auth.exceptions.RefreshError: ('No access token in response.', {'id_token': '***'})
+[2023-12-28T09:01:05.453+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20231227T000000, start_date=20231228T090104, end_date=20231228T090105
+[2023-12-28T09:01:05.550+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 36 for task table_source_a (('No access token in response.', {'id_token': '***'}); 893)
+[2023-12-28T09:01:05.619+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2023-12-28T09:01:05.724+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

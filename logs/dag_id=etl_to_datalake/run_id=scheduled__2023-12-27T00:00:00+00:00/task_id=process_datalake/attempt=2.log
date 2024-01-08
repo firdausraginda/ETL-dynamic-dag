@@ -1,0 +1,24 @@
+[2023-12-28T08:13:33.299+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.process_datalake scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T08:13:33.302+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.process_datalake scheduled__2023-12-27T00:00:00+00:00 [queued]>
+[2023-12-28T08:13:33.303+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 4
+[2023-12-28T08:13:33.309+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): process_datalake> on 2023-12-27 00:00:00+00:00
+[2023-12-28T08:13:33.316+0000] {standard_task_runner.py:60} INFO - Started process 114 to run task
+[2023-12-28T08:13:33.319+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'process_datalake', 'scheduled__2023-12-27T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmpot_h8sny']
+[2023-12-28T08:13:33.320+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask process_datalake
+[2023-12-28T08:13:33.356+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.process_datalake scheduled__2023-12-27T00:00:00+00:00 [running]> on host 64bb4a2d8189
+[2023-12-28T08:13:33.434+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='process_datalake' AIRFLOW_CTX_EXECUTION_DATE='2023-12-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-27T00:00:00+00:00'
+[2023-12-28T08:13:33.445+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 76, in process_datalake
+    load_query_result_to_bq(dict_config["sql"], dict_config["write_disposition"],
+KeyError: 'write_disposition'
+[2023-12-28T08:13:33.454+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=etl_to_datalake, task_id=process_datalake, execution_date=20231227T000000, start_date=20231228T081333, end_date=20231228T081333
+[2023-12-28T08:13:33.460+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 14 for task process_datalake ('write_disposition'; 114)
+[2023-12-28T08:13:33.492+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2023-12-28T08:13:33.508+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

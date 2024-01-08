@@ -1,0 +1,32 @@
+[2024-01-08T07:21:00.956+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2024-01-08T07:21:00.972+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2024-01-08T07:21:00.974+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:21:01.004+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_b> on 2024-01-06 00:00:00+00:00
+[2024-01-08T07:21:01.017+0000] {standard_task_runner.py:60} INFO - Started process 143 to run task
+[2024-01-08T07:21:01.032+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_b', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmpfi6ptyp7']
+[2024-01-08T07:21:01.036+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask table_source_b
+[2024-01-08T07:21:01.171+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:21:01.406+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_b' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2024-01-08T07:21:01.471+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T07:21:01.584+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T07:21:04.806+0000] {logging_mixin.py:188} INFO - successfully load data to alpine-life-350508.project_x_datalake.table_source_b
+[2024-01-08T07:21:04.806+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-08T07:21:04.818+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_datalake, task_id=table_source_b, execution_date=20240106T000000, start_date=20240108T072100, end_date=20240108T072104
+[2024-01-08T07:21:04.873+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-08T07:21:04.896+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-01-08T07:29:47.645+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2024-01-08T07:29:47.679+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2024-01-08T07:29:47.680+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-08T07:29:47.715+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_b> on 2024-01-06 00:00:00+00:00
+[2024-01-08T07:29:47.730+0000] {standard_task_runner.py:60} INFO - Started process 335 to run task
+[2024-01-08T07:29:47.753+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_b', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmptv8thfxc']
+[2024-01-08T07:29:47.758+0000] {standard_task_runner.py:88} INFO - Job 61: Subtask table_source_b
+[2024-01-08T07:29:48.006+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_b scheduled__2024-01-06T00:00:00+00:00 [running]> on host 6d1c1d696e23
+[2024-01-08T07:29:48.304+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_b' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2024-01-08T07:29:48.416+0000] {connection.py:234} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-01-08T07:29:48.547+0000] {logging_mixin.py:188} INFO - successfully created BQ client
+[2024-01-08T07:29:55.636+0000] {logging_mixin.py:188} INFO - successfully load data to alpine-life-350508.project_x_datalake.table_source_b
+[2024-01-08T07:29:55.637+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-08T07:29:55.651+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_datalake, task_id=table_source_b, execution_date=20240106T000000, start_date=20240108T072947, end_date=20240108T072955
+[2024-01-08T07:29:55.715+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-08T07:29:55.743+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
