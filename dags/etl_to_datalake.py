@@ -26,9 +26,6 @@ def init_bq_client():
         credentials = service_account.Credentials.from_service_account_info(
             service_account_json)
         credentials = credentials.with_scopes(["https://www.googleapis.com/auth/cloud-platform"])
-        client = bigquery.Client(credentials=credentials,
-                                project=credentials.project_id)
-
         client = bigquery.Client(credentials=credentials)
     
     except Exception as e:

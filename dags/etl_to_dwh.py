@@ -27,9 +27,8 @@ def init_bq_client():
         credentials = service_account.Credentials.from_service_account_info(
             service_account_json)
         credentials = credentials.with_scopes(["https://www.googleapis.com/auth/cloud-platform"])
-        client = bigquery.Client(credentials=credentials,
-                                project=credentials.project_id)
-
+        # client = bigquery.Client(credentials=credentials,
+        #                         project=credentials.project_id)
         client = bigquery.Client(credentials=credentials)
     
     except Exception as e:
@@ -130,5 +129,6 @@ with DAG(
                 task_dwh.set_upstream(task_wait_ext_depen)
 
     for dict_task_dwh in list_dict_task_dwh:
-        list_dependency = [item["task_dwh"] for item in list_dict_task_dwh if item["task_dwh"].task_id in dict_task_dwh["list_internal_task_dependency"]]
-        dict_task_dwh["task_dwh"].set_upstream(list_dependency)
+        if dict_task_dwh["list_internal_task_dependency"]:
+            list_dependency = [item["task_dwh"] for item in list_dict_task_dwh if item["task_dwh"].task_id in dict_task_dwh["list_internal_task_dependency"]]
+            dict_task_dwh["task_dwh"].set_upstream(list_dependency)

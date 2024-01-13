@@ -32,5 +32,5 @@ docker container ps -a
 
 * delete DAG
 ```
-docker exect -it <container_id> airflow dags delete <dag_name>
+docker exec -it <container_id> airflow dags delete <dag_name>
 ```

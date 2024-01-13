@@ -4916,3 +4916,1005 @@ FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/data/daily
 [2024-01-08T07:48:52.916+0000] {logging_mixin.py:188} INFO - [2024-01-08T07:48:52.916+0000] {dag.py:3033} INFO - Sync 1 DAGs
 [2024-01-08T07:48:52.948+0000] {logging_mixin.py:188} INFO - [2024-01-08T07:48:52.948+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-08T00:00:00+00:00, run_after=2024-01-09T00:00:00+00:00
 [2024-01-08T07:48:52.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.866 seconds
+[2024-01-08T11:49:57.326+0000] {processor.py:161} INFO - Started process (PID=32) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:49:57.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:49:57.358+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:49:57.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:50:00.720+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:50:01.128+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.127+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:etl_to_datalake
+[2024-01-08T11:50:01.154+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.153+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:etl_to_datalake
+[2024-01-08T11:50:01.179+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.179+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:etl_to_datalake
+[2024-01-08T11:50:01.183+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.182+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:50:01.243+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.242+0000] {dag.py:3055} INFO - Creating ORM DAG for etl_to_datalake
+[2024-01-08T11:50:01.288+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:01.288+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:50:01.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 4.084 seconds
+[2024-01-08T11:50:32.042+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:50:32.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:50:32.076+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:32.075+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:50:32.767+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:50:32.787+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:32.786+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:50:32.815+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:50:32.815+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:50:32.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.802 seconds
+[2024-01-08T11:51:02.933+0000] {processor.py:161} INFO - Started process (PID=156) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:02.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:51:02.937+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:02.937+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:03.595+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:03.614+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:03.614+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:51:03.641+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:03.641+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:51:03.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.737 seconds
+[2024-01-08T11:51:33.746+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:33.747+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:51:33.750+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:33.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:34.454+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:51:34.474+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:34.473+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:51:34.495+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:51:34.495+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:51:34.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.774 seconds
+[2024-01-08T11:52:04.797+0000] {processor.py:161} INFO - Started process (PID=274) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:04.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:52:04.801+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:04.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:05.508+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:05.525+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:05.524+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:52:05.552+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:05.552+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:52:05.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.779 seconds
+[2024-01-08T11:52:36.108+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:36.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:52:36.113+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:36.112+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:36.764+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:52:36.783+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:36.783+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:52:36.806+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:52:36.806+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:52:36.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.724 seconds
+[2024-01-08T11:53:06.870+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:06.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:53:06.874+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:06.874+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:07.514+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:07.534+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:07.533+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:53:07.557+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:07.556+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:53:07.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.716 seconds
+[2024-01-08T11:53:37.965+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:37.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:53:37.985+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:37.985+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:38.680+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:53:38.699+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:38.698+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:53:38.721+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:53:38.721+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:53:38.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.786 seconds
+[2024-01-08T11:54:08.875+0000] {processor.py:161} INFO - Started process (PID=513) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:08.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:54:08.880+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:08.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:09.534+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:09.554+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:09.554+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:54:09.579+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:09.579+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:54:09.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.728 seconds
+[2024-01-08T11:54:40.308+0000] {processor.py:161} INFO - Started process (PID=572) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:40.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:54:40.314+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:40.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:41.074+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:54:41.094+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:41.093+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:54:41.119+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:54:41.119+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:54:41.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.837 seconds
+[2024-01-08T11:55:11.202+0000] {processor.py:161} INFO - Started process (PID=635) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:11.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:55:11.206+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:11.206+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:11.861+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:11.881+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:11.880+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:55:11.904+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:11.904+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:55:11.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.726 seconds
+[2024-01-08T11:55:42.642+0000] {processor.py:161} INFO - Started process (PID=694) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:42.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:55:42.648+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:42.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:43.338+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:55:43.358+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:43.357+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:55:43.384+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:55:43.383+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:55:43.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.767 seconds
+[2024-01-08T11:56:13.587+0000] {processor.py:161} INFO - Started process (PID=757) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:13.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:56:13.592+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:13.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:14.247+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:14.266+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:14.265+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:56:14.290+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:14.290+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:56:14.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.729 seconds
+[2024-01-08T11:56:44.928+0000] {processor.py:161} INFO - Started process (PID=816) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:44.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:56:44.934+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:44.934+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:45.901+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:56:45.928+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:45.927+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:56:45.967+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:56:45.967+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:56:45.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.075 seconds
+[2024-01-08T11:57:16.462+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:16.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:57:16.466+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:16.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:17.449+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:17.478+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:17.477+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:57:17.519+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:17.518+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:57:17.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.091 seconds
+[2024-01-08T11:57:48.194+0000] {processor.py:161} INFO - Started process (PID=937) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:48.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:57:48.202+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:48.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:49.214+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:57:49.245+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:49.244+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:57:49.292+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:57:49.291+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:57:49.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.137 seconds
+[2024-01-08T11:58:19.555+0000] {processor.py:161} INFO - Started process (PID=996) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:19.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:58:19.561+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:19.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:20.261+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:20.285+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:20.284+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:58:20.310+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:20.309+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:58:20.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.782 seconds
+[2024-01-08T11:58:50.898+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:50.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:58:50.901+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:50.901+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:51.603+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:58:51.622+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:51.621+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:58:51.646+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:58:51.646+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:58:51.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.776 seconds
+[2024-01-08T11:59:22.182+0000] {processor.py:161} INFO - Started process (PID=1114) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:22.217+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:59:22.221+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:22.221+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:22.966+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:22.987+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:22.987+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:59:23.028+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:23.027+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:59:23.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.873 seconds
+[2024-01-08T11:59:54.041+0000] {processor.py:161} INFO - Started process (PID=1173) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:54.042+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T11:59:54.046+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:54.045+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:54.719+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T11:59:54.739+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:54.738+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T11:59:54.762+0000] {logging_mixin.py:188} INFO - [2024-01-08T11:59:54.762+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T11:59:54.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.747 seconds
+[2024-01-08T12:00:25.300+0000] {processor.py:161} INFO - Started process (PID=1232) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:25.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:00:25.322+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:25.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:25.997+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:26.018+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:26.017+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:00:26.040+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:26.040+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:00:26.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.767 seconds
+[2024-01-08T12:00:56.503+0000] {processor.py:161} INFO - Started process (PID=1291) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:56.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:00:56.507+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:56.507+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:57.161+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:00:57.180+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:57.179+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:00:57.205+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:00:57.205+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:00:57.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.726 seconds
+[2024-01-08T12:01:27.976+0000] {processor.py:161} INFO - Started process (PID=1350) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:27.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:01:27.980+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:27.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:28.704+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:28.731+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:28.730+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:01:28.760+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:28.760+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:01:28.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.811 seconds
+[2024-01-08T12:01:58.839+0000] {processor.py:161} INFO - Started process (PID=1408) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:58.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:01:58.845+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:58.845+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:59.535+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:01:59.556+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:59.556+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:01:59.585+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:01:59.584+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:01:59.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.773 seconds
+[2024-01-08T12:02:29.753+0000] {processor.py:161} INFO - Started process (PID=1469) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:02:29.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:02:29.759+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:02:29.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:02:30.432+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:02:30.452+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:02:30.451+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:02:30.484+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:02:30.484+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:02:30.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.758 seconds
+[2024-01-08T12:03:00.688+0000] {processor.py:161} INFO - Started process (PID=1528) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:00.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:03:00.693+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:00.693+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:01.381+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:01.401+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:01.401+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:03:01.427+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:01.426+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:03:01.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.763 seconds
+[2024-01-08T12:03:31.855+0000] {processor.py:161} INFO - Started process (PID=1587) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:31.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:03:31.860+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:31.860+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:32.525+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:03:32.549+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:32.549+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:03:32.575+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:03:32.575+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:03:32.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.747 seconds
+[2024-01-08T12:04:02.856+0000] {processor.py:161} INFO - Started process (PID=1646) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:02.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:04:02.862+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:02.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:03.418+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:03.446+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:03.445+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:04:03.487+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:03.486+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:04:03.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.670 seconds
+[2024-01-08T12:04:33.625+0000] {processor.py:161} INFO - Started process (PID=1706) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:33.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:04:33.630+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:33.630+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:34.326+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:04:34.351+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:34.351+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:04:34.378+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:04:34.378+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:04:34.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.782 seconds
+[2024-01-08T12:05:05.182+0000] {processor.py:161} INFO - Started process (PID=1771) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:05.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:05:05.188+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:05.188+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:05.853+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:05.877+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:05.876+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:05:05.913+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:05.912+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:05:05.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.766 seconds
+[2024-01-08T12:05:36.517+0000] {processor.py:161} INFO - Started process (PID=1830) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:36.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:05:36.522+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:36.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:37.040+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:05:37.063+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:37.062+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:05:37.094+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:05:37.093+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:05:37.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.608 seconds
+[2024-01-08T12:06:08.019+0000] {processor.py:161} INFO - Started process (PID=1889) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:08.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:06:08.058+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:08.057+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:08.552+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:08.575+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:08.574+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:06:08.599+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:08.598+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:06:08.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.607 seconds
+[2024-01-08T12:06:39.325+0000] {processor.py:161} INFO - Started process (PID=1948) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:39.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:06:39.329+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:39.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:39.783+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:06:39.811+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:39.811+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:06:39.840+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:06:39.840+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:06:39.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.545 seconds
+[2024-01-08T12:07:10.653+0000] {processor.py:161} INFO - Started process (PID=2007) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:10.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:07:10.676+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:10.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:11.231+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:11.264+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:11.264+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:07:11.289+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:11.289+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:07:11.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.664 seconds
+[2024-01-08T12:07:42.265+0000] {processor.py:161} INFO - Started process (PID=2066) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:42.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:07:42.271+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:42.270+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:43.005+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:07:43.034+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:43.034+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:07:43.073+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:07:43.073+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:07:43.100+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.841 seconds
+[2024-01-08T12:08:13.664+0000] {processor.py:161} INFO - Started process (PID=2125) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:13.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:08:13.670+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:13.669+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:14.271+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:14.301+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:14.300+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:08:14.340+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:14.339+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:08:14.369+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.711 seconds
+[2024-01-08T12:08:44.436+0000] {processor.py:161} INFO - Started process (PID=2184) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:44.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:08:44.440+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:44.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:44.918+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:08:44.942+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:44.941+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:08:44.969+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:08:44.968+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:08:44.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.559 seconds
+[2024-01-08T12:09:15.580+0000] {processor.py:161} INFO - Started process (PID=2243) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:15.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:09:15.604+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:15.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:16.095+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:16.125+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:16.124+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:09:16.154+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:16.153+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:09:16.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.605 seconds
+[2024-01-08T12:09:46.950+0000] {processor.py:161} INFO - Started process (PID=2302) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:46.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:09:46.955+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:46.954+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:47.434+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:09:47.458+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:47.457+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:09:47.490+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:09:47.489+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:09:47.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.565 seconds
+[2024-01-08T12:10:18.310+0000] {processor.py:161} INFO - Started process (PID=2361) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:18.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:10:18.317+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:18.316+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:18.787+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:18.809+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:18.808+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:10:18.835+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:18.835+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:10:18.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.550 seconds
+[2024-01-08T12:10:49.664+0000] {processor.py:161} INFO - Started process (PID=2420) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:49.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:10:49.668+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:49.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:50.132+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:10:50.155+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:50.154+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:10:50.181+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:10:50.181+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:10:50.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.544 seconds
+[2024-01-08T12:11:21.155+0000] {processor.py:161} INFO - Started process (PID=2479) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:21.188+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:11:21.192+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:21.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:21.658+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:21.680+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:21.680+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:11:21.910+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:21.909+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:11:21.931+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.780 seconds
+[2024-01-08T12:11:52.435+0000] {processor.py:161} INFO - Started process (PID=2538) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:52.462+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:11:52.467+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:52.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:52.946+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:11:52.970+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:52.969+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:11:53.005+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:11:53.004+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:11:53.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.803 seconds
+[2024-01-08T12:12:23.776+0000] {processor.py:161} INFO - Started process (PID=2597) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:23.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:12:23.781+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:23.781+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:24.255+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:24.276+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:24.275+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:12:24.309+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:24.309+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:12:24.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.755 seconds
+[2024-01-08T12:12:55.304+0000] {processor.py:161} INFO - Started process (PID=2656) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:55.306+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:12:55.309+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:55.308+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:55.766+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:12:55.789+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:55.788+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:12:55.826+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:12:55.825+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:12:56.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.747 seconds
+[2024-01-08T12:13:26.828+0000] {processor.py:161} INFO - Started process (PID=2715) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:26.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:13:26.832+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:26.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:27.291+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:27.315+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:27.314+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:13:27.340+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:27.340+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:13:27.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.738 seconds
+[2024-01-08T12:13:58.287+0000] {processor.py:161} INFO - Started process (PID=2774) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:58.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:13:58.293+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:58.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:58.758+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:13:58.782+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:58.782+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:13:58.807+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:13:58.807+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:13:58.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.549 seconds
+[2024-01-08T12:14:29.856+0000] {processor.py:161} INFO - Started process (PID=2833) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:14:29.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:14:29.861+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:14:29.861+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:14:30.334+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:14:30.363+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:14:30.362+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:14:30.388+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:14:30.388+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:14:30.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.759 seconds
+[2024-01-08T12:15:01.460+0000] {processor.py:161} INFO - Started process (PID=2892) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:01.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:15:01.485+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:01.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:02.234+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:02.265+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:02.264+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:15:02.305+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:02.305+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:15:02.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.123 seconds
+[2024-01-08T12:15:33.346+0000] {processor.py:161} INFO - Started process (PID=2952) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:33.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:15:33.353+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:33.353+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:33.942+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:15:33.966+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:33.966+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:15:34.223+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:15:34.223+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:15:34.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.907 seconds
+[2024-01-08T12:16:04.657+0000] {processor.py:161} INFO - Started process (PID=3015) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:04.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:16:04.662+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:04.661+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:05.178+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:05.200+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:05.199+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:16:05.435+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:05.435+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:16:05.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.803 seconds
+[2024-01-08T12:16:35.663+0000] {processor.py:161} INFO - Started process (PID=3076) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:35.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:16:35.668+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:35.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:36.186+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:16:36.216+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:36.215+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:16:36.504+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:16:36.503+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:16:36.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.872 seconds
+[2024-01-08T12:17:06.987+0000] {processor.py:161} INFO - Started process (PID=3141) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:06.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:17:06.991+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:06.990+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:07.642+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:07.661+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:07.661+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:17:07.685+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:07.684+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:17:07.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.721 seconds
+[2024-01-08T12:17:38.361+0000] {processor.py:161} INFO - Started process (PID=3200) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:38.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:17:38.368+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:38.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:39.085+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:17:39.103+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:39.103+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:17:39.126+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:17:39.126+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:17:39.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.788 seconds
+[2024-01-08T12:18:09.941+0000] {processor.py:161} INFO - Started process (PID=3259) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:09.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:18:09.947+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:09.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:10.615+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:10.636+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:10.635+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:18:10.663+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:10.663+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:18:10.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.748 seconds
+[2024-01-08T12:18:41.358+0000] {processor.py:161} INFO - Started process (PID=3318) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:41.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:18:41.400+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:41.399+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:42.091+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:18:42.109+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:42.109+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:18:42.132+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:18:42.132+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:18:42.152+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.800 seconds
+[2024-01-08T12:19:12.748+0000] {processor.py:161} INFO - Started process (PID=3377) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:12.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:19:12.751+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:12.751+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:13.409+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:13.429+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:13.428+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:19:13.454+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:13.454+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:19:13.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.732 seconds
+[2024-01-08T12:19:44.307+0000] {processor.py:161} INFO - Started process (PID=3436) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:44.309+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:19:44.313+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:44.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:45.168+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:19:45.188+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:45.188+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:19:45.214+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:19:45.214+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:19:45.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.934 seconds
+[2024-01-08T12:20:15.819+0000] {processor.py:161} INFO - Started process (PID=3495) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:15.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:20:15.826+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:15.826+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:16.821+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:16.850+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:16.849+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:20:16.883+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:16.883+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:20:16.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.096 seconds
+[2024-01-08T12:20:47.011+0000] {processor.py:161} INFO - Started process (PID=3554) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:47.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:20:47.016+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:47.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:47.717+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:20:47.738+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:47.737+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:20:47.759+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:20:47.759+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:20:47.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.775 seconds
+[2024-01-08T12:21:17.861+0000] {processor.py:161} INFO - Started process (PID=3613) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:17.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:21:17.866+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:17.866+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:18.524+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:18.549+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:18.548+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:21:18.577+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:18.577+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:21:18.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.739 seconds
+[2024-01-08T12:21:49.546+0000] {processor.py:161} INFO - Started process (PID=3672) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:49.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:21:49.553+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:49.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:50.265+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:21:50.287+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:50.286+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:21:50.310+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:21:50.310+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:21:50.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.791 seconds
+[2024-01-08T12:22:21.080+0000] {processor.py:161} INFO - Started process (PID=3731) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:21.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:22:21.086+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:21.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:21.768+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:21.789+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:21.788+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:22:21.813+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:21.812+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:22:21.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.759 seconds
+[2024-01-08T12:22:52.727+0000] {processor.py:161} INFO - Started process (PID=3790) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:52.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:22:52.731+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:52.731+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:53.403+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:22:53.423+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:53.423+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:22:53.446+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:22:53.446+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:22:53.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.743 seconds
+[2024-01-08T12:23:24.210+0000] {processor.py:161} INFO - Started process (PID=3849) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:24.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:23:24.243+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:24.243+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:24.919+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:24.939+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:24.939+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:23:24.962+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:24.962+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:23:24.987+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.782 seconds
+[2024-01-08T12:23:55.684+0000] {processor.py:161} INFO - Started process (PID=3908) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:55.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:23:55.689+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:55.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:56.362+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:23:56.382+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:56.381+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:23:56.405+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:23:56.405+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:23:56.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.748 seconds
+[2024-01-08T12:24:27.312+0000] {processor.py:161} INFO - Started process (PID=3967) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:27.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:24:27.326+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:27.326+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:28.086+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:28.106+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:28.106+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:24:28.134+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:28.133+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:24:28.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.853 seconds
+[2024-01-08T12:24:58.896+0000] {processor.py:161} INFO - Started process (PID=4027) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:58.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:24:58.901+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:58.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:59.587+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:24:59.607+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:59.606+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:24:59.632+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:24:59.631+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:24:59.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.759 seconds
+[2024-01-08T12:25:30.418+0000] {processor.py:161} INFO - Started process (PID=4086) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:25:30.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:25:30.423+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:25:30.423+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:25:31.307+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:25:31.328+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:25:31.327+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:25:31.367+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:25:31.367+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:25:31.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.983 seconds
+[2024-01-08T12:26:01.583+0000] {processor.py:161} INFO - Started process (PID=4145) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:01.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:26:01.587+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:01.586+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:02.248+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:02.271+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:02.270+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:26:02.293+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:02.293+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:26:02.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.733 seconds
+[2024-01-08T12:26:32.355+0000] {processor.py:161} INFO - Started process (PID=4203) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:32.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:26:32.372+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:32.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:33.030+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:26:33.050+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:33.049+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:26:33.073+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:26:33.073+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:26:33.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.742 seconds
+[2024-01-08T12:27:03.133+0000] {processor.py:161} INFO - Started process (PID=4262) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:03.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:27:03.137+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:03.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:03.762+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:03.780+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:03.779+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:27:03.802+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:03.802+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:27:03.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.693 seconds
+[2024-01-08T12:27:34.661+0000] {processor.py:161} INFO - Started process (PID=4321) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:34.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:27:34.708+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:34.707+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:35.408+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:27:35.427+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:35.427+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:27:35.453+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:27:35.453+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:27:35.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.818 seconds
+[2024-01-08T12:28:05.616+0000] {processor.py:161} INFO - Started process (PID=4386) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:05.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:28:05.620+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:05.620+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:06.308+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:06.327+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:06.327+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:28:06.349+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:06.349+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:28:06.373+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.762 seconds
+[2024-01-08T12:28:36.491+0000] {processor.py:161} INFO - Started process (PID=4451) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:36.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:28:36.496+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:36.496+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:37.184+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:28:37.203+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:37.202+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:28:37.227+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:28:37.227+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:28:37.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.762 seconds
+[2024-01-08T12:29:07.291+0000] {processor.py:161} INFO - Started process (PID=4515) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:07.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:29:07.294+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:07.294+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:07.941+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:07.959+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:07.958+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:29:07.979+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:07.979+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:29:07.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.710 seconds
+[2024-01-08T12:29:38.457+0000] {processor.py:161} INFO - Started process (PID=4581) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:38.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:29:38.465+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:38.464+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:39.120+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:29:39.137+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:39.137+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:29:39.158+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:29:39.158+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:29:39.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.723 seconds
+[2024-01-08T12:30:09.965+0000] {processor.py:161} INFO - Started process (PID=4642) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:09.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:30:09.969+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:09.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:10.631+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:10.653+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:10.652+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:30:10.675+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:10.674+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:30:10.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.732 seconds
+[2024-01-08T12:30:41.469+0000] {processor.py:161} INFO - Started process (PID=4704) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:41.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:30:41.475+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:41.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:42.165+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:30:42.184+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:42.184+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:30:42.206+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:30:42.206+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:30:42.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.758 seconds
+[2024-01-08T12:31:12.680+0000] {processor.py:161} INFO - Started process (PID=4763) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:12.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:31:12.685+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:12.685+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:13.555+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:13.585+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:13.584+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:31:13.624+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:13.624+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:31:13.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.978 seconds
+[2024-01-08T12:31:44.148+0000] {processor.py:161} INFO - Started process (PID=4822) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:44.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:31:44.153+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:44.152+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:44.857+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:31:44.876+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:44.875+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:31:44.898+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:31:44.898+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:31:44.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.773 seconds
+[2024-01-08T12:32:15.573+0000] {processor.py:161} INFO - Started process (PID=4881) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:15.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:32:15.577+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:15.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:16.201+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:16.221+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:16.220+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:32:16.245+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:16.245+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:32:16.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.695 seconds
+[2024-01-08T12:32:46.310+0000] {processor.py:161} INFO - Started process (PID=4939) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:46.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:32:46.324+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:46.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:46.948+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:32:46.965+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:46.964+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:32:46.987+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:32:46.986+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:32:47.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.696 seconds
+[2024-01-08T12:33:17.509+0000] {processor.py:161} INFO - Started process (PID=4999) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:17.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:33:17.513+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:17.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:18.141+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:18.159+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:18.159+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:33:18.183+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:18.182+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:33:18.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.697 seconds
+[2024-01-08T12:33:49.030+0000] {processor.py:161} INFO - Started process (PID=5058) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:49.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:33:49.072+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:49.072+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:49.680+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:33:49.697+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:49.696+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:33:49.718+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:33:49.718+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:33:49.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.713 seconds
+[2024-01-08T12:34:20.529+0000] {processor.py:161} INFO - Started process (PID=5117) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:20.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:34:20.533+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:20.533+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:21.168+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:21.192+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:21.191+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:34:21.215+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:21.215+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:34:21.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.713 seconds
+[2024-01-08T12:34:51.714+0000] {processor.py:161} INFO - Started process (PID=5176) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:51.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:34:51.720+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:51.720+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:52.629+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:34:52.653+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:52.652+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:34:52.688+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:34:52.687+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:34:52.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.002 seconds
+[2024-01-08T12:35:23.126+0000] {processor.py:161} INFO - Started process (PID=5235) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:23.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:35:23.130+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:23.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:24.041+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:24.066+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:24.065+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:35:24.102+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:24.102+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:35:24.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.009 seconds
+[2024-01-08T12:35:54.671+0000] {processor.py:161} INFO - Started process (PID=5294) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:54.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:35:54.676+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:54.675+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:55.350+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:35:55.368+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:55.368+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:35:55.396+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:35:55.396+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:35:55.414+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.748 seconds
+[2024-01-08T12:36:26.080+0000] {processor.py:161} INFO - Started process (PID=5353) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:26.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:36:26.085+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:26.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:26.698+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:26.717+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:26.717+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:36:26.740+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:26.740+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:36:26.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.683 seconds
+[2024-01-08T12:36:57.497+0000] {processor.py:161} INFO - Started process (PID=5412) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:57.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:36:57.501+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:57.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:58.150+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:36:58.173+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:58.172+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:36:58.197+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:36:58.196+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:36:58.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.723 seconds
+[2024-01-08T12:37:28.897+0000] {processor.py:161} INFO - Started process (PID=5471) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:37:28.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:37:28.912+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:37:28.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:37:29.522+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:37:29.540+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:37:29.539+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:37:29.562+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:37:29.562+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:37:29.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.692 seconds
+[2024-01-08T12:38:00.074+0000] {processor.py:161} INFO - Started process (PID=5530) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:38:00.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T12:38:00.078+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:38:00.078+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:38:00.694+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T12:38:00.713+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:38:00.712+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T12:38:00.734+0000] {logging_mixin.py:188} INFO - [2024-01-08T12:38:00.734+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T12:38:00.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.683 seconds
+[2024-01-08T13:29:50.306+0000] {processor.py:161} INFO - Started process (PID=31) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:29:50.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:29:50.319+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:50.319+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:29:52.568+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:29:52.827+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.826+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:etl_to_datalake
+[2024-01-08T13:29:52.840+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.839+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:etl_to_datalake
+[2024-01-08T13:29:52.846+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.846+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:etl_to_datalake
+[2024-01-08T13:29:52.848+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.847+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:29:52.865+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.864+0000] {dag.py:3055} INFO - Creating ORM DAG for etl_to_datalake
+[2024-01-08T13:29:52.877+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:29:52.877+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:29:52.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 2.611 seconds
+[2024-01-08T13:30:23.303+0000] {processor.py:161} INFO - Started process (PID=90) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:23.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:30:23.366+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:23.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:23.894+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:23.909+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:23.909+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:30:23.931+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:23.931+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:30:23.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.647 seconds
+[2024-01-08T13:30:53.991+0000] {processor.py:161} INFO - Started process (PID=149) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:53.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:30:53.993+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:53.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:54.495+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:30:54.508+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:54.508+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:30:54.526+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:30:54.526+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:30:54.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.553 seconds
+[2024-01-08T13:31:25.066+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:25.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:31:25.087+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:25.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:25.572+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:25.587+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:25.586+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:31:25.605+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:25.604+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:31:25.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.556 seconds
+[2024-01-08T13:31:56.039+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:56.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:31:56.042+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:56.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:56.558+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:31:56.574+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:56.573+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:31:56.594+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:31:56.594+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:31:56.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.579 seconds
+[2024-01-08T13:32:26.757+0000] {processor.py:161} INFO - Started process (PID=326) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:32:26.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:32:26.775+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:32:26.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:32:27.292+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:32:27.313+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:32:27.312+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:32:27.336+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:32:27.336+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:32:27.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.600 seconds
+[2024-01-08T13:36:26.183+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:26.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:36:26.202+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:36:26.202+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:27.621+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:36:27.619+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_to_datalake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_to_datalake.py", line 14, in <module>
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../data/'))
+NameError: name 'sys' is not defined
+[2024-01-08T13:36:27.622+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:27.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.498 seconds
+[2024-01-08T13:36:57.908+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:57.953+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:36:57.955+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:36:57.954+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:58.542+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:36:58.541+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/etl_to_datalake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_to_datalake.py", line 14, in <module>
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../data/'))
+NameError: name 'sys' is not defined
+[2024-01-08T13:36:58.543+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:36:58.560+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.655 seconds
+[2024-01-08T13:40:47.473+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:40:47.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:40:47.498+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:40:47.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:40:48.807+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:40:49.124+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:40:49.123+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:40:49.190+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:40:49.190+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:40:49.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 1.810 seconds
+[2024-01-08T13:41:19.802+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:19.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:41:19.838+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:19.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:20.416+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:20.445+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:20.444+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:41:20.470+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:20.470+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:41:20.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.690 seconds
+[2024-01-08T13:41:50.649+0000] {processor.py:161} INFO - Started process (PID=148) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:50.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:41:50.652+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:50.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:51.172+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:41:51.190+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:51.189+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:41:51.213+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:41:51.213+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:41:51.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.588 seconds
+[2024-01-08T13:42:21.429+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:21.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:42:21.432+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:21.432+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:21.978+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:21.997+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:21.996+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:42:22.021+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:22.021+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:42:22.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.612 seconds
+[2024-01-08T13:42:52.089+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:52.091+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:42:52.093+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:52.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:52.603+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:42:52.621+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:52.620+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:42:52.641+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:42:52.640+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:42:52.658+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.572 seconds
+[2024-01-08T13:43:22.959+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:22.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:43:22.976+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:22.976+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:23.508+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:23.527+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:23.527+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:43:23.549+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:23.549+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:43:23.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.609 seconds
+[2024-01-08T13:43:53.681+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:53.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:43:53.685+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:53.685+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:54.177+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:43:54.193+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:54.192+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:43:54.213+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:43:54.213+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:43:54.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.553 seconds
+[2024-01-08T13:44:25.151+0000] {processor.py:161} INFO - Started process (PID=448) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:25.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:44:25.155+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:25.155+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:25.677+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:25.693+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:25.692+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:44:25.714+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:25.714+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:44:25.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.586 seconds
+[2024-01-08T13:44:56.562+0000] {processor.py:161} INFO - Started process (PID=507) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:56.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:44:56.573+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:56.573+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:57.079+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:44:57.100+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:57.099+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:44:57.127+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:44:57.127+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:44:57.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.586 seconds
+[2024-01-08T13:45:27.796+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:27.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:45:27.798+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:27.798+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:28.312+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:28.328+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:28.326+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:45:28.347+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:28.347+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:45:28.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.573 seconds
+[2024-01-08T13:45:59.189+0000] {processor.py:161} INFO - Started process (PID=625) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:59.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:45:59.203+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:59.203+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:59.725+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:45:59.745+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:59.744+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:45:59.770+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:45:59.770+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:45:59.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.603 seconds
+[2024-01-08T13:46:29.941+0000] {processor.py:161} INFO - Started process (PID=684) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:46:29.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:46:29.946+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:46:29.945+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:46:30.554+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:46:30.580+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:46:30.579+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:46:30.605+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:46:30.604+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:46:30.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.690 seconds
+[2024-01-08T13:47:01.263+0000] {processor.py:161} INFO - Started process (PID=750) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:01.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:47:01.268+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:01.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:01.891+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:01.913+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:01.912+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:47:01.935+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:01.935+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:47:01.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.723 seconds
+[2024-01-08T13:47:32.867+0000] {processor.py:161} INFO - Started process (PID=809) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:32.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:47:32.872+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:32.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:33.677+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:47:33.704+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:33.703+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:47:33.738+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:47:33.737+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:47:33.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.898 seconds
+[2024-01-08T13:48:04.361+0000] {processor.py:161} INFO - Started process (PID=868) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:04.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:48:04.365+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:04.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:04.912+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:04.929+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:04.928+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:48:04.949+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:04.949+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:48:04.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.610 seconds
+[2024-01-08T13:48:35.754+0000] {processor.py:161} INFO - Started process (PID=927) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:35.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:48:35.756+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:35.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:36.287+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:48:36.304+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:36.304+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:48:36.324+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:48:36.324+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:48:36.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.591 seconds
+[2024-01-08T13:49:06.393+0000] {processor.py:161} INFO - Started process (PID=986) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:06.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:49:06.423+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:06.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:06.934+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:06.954+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:06.954+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:49:06.976+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:06.976+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:49:06.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.607 seconds
+[2024-01-08T13:49:37.698+0000] {processor.py:161} INFO - Started process (PID=1045) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:37.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:49:37.701+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:37.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:38.246+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:49:38.266+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:38.266+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:49:38.288+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:49:38.288+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:49:38.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.613 seconds
+[2024-01-08T13:50:08.461+0000] {processor.py:161} INFO - Started process (PID=1108) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:08.463+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:50:08.465+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:08.464+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:09.032+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:09.052+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:09.051+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:50:09.071+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:09.071+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:50:09.086+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.628 seconds
+[2024-01-08T13:50:39.209+0000] {processor.py:161} INFO - Started process (PID=1172) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:39.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:50:39.212+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:39.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:39.735+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:50:39.753+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:39.752+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:50:39.771+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:50:39.771+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:50:39.788+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.582 seconds
+[2024-01-08T13:51:10.389+0000] {processor.py:161} INFO - Started process (PID=1232) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:10.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:51:10.393+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:10.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:10.920+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:10.937+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:10.937+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:51:10.956+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:10.956+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:51:10.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.588 seconds
+[2024-01-08T13:51:41.563+0000] {processor.py:161} INFO - Started process (PID=1291) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:41.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:51:41.568+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:41.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:42.122+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:51:42.140+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:42.139+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:51:42.159+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:51:42.159+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:51:42.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.619 seconds
+[2024-01-08T13:52:12.905+0000] {processor.py:161} INFO - Started process (PID=1352) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:12.906+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:52:12.908+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:12.907+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:13.428+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:13.445+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:13.445+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:52:13.465+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:13.464+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:52:13.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.583 seconds
+[2024-01-08T13:52:44.190+0000] {processor.py:161} INFO - Started process (PID=1411) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:44.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:52:44.194+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:44.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:44.709+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:52:44.726+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:44.725+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:52:44.744+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:52:44.744+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:52:44.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.576 seconds
+[2024-01-08T13:53:15.615+0000] {processor.py:161} INFO - Started process (PID=1470) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:15.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:53:15.619+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:15.619+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:16.183+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:16.210+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:16.209+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:53:16.238+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:16.238+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:53:16.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.648 seconds
+[2024-01-08T13:53:47.198+0000] {processor.py:161} INFO - Started process (PID=1529) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:47.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:53:47.203+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:47.202+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:47.738+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:53:47.756+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:47.755+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:53:47.777+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:53:47.776+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:53:47.800+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.605 seconds
+[2024-01-08T13:54:17.863+0000] {processor.py:161} INFO - Started process (PID=1588) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:17.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:54:17.865+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:17.865+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:18.389+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:18.406+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:18.406+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:54:18.427+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:18.426+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:54:18.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.586 seconds
+[2024-01-08T13:54:49.175+0000] {processor.py:161} INFO - Started process (PID=1647) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:49.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:54:49.196+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:49.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:49.717+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:54:49.737+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:49.736+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:54:49.757+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:54:49.756+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:54:49.774+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.603 seconds
+[2024-01-08T13:55:19.815+0000] {processor.py:161} INFO - Started process (PID=1706) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:19.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:55:19.818+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:19.817+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:20.343+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:20.359+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:20.359+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:55:20.378+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:20.378+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:55:20.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.589 seconds
+[2024-01-08T13:55:51.002+0000] {processor.py:161} INFO - Started process (PID=1765) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:51.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:55:51.014+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:51.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:51.587+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:55:51.608+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:51.607+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:55:51.637+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:55:51.637+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:55:51.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.659 seconds
+[2024-01-08T13:56:22.623+0000] {processor.py:161} INFO - Started process (PID=1824) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:22.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:56:22.626+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:22.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:23.144+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:23.163+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:23.162+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:56:23.181+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:23.181+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:56:23.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.580 seconds
+[2024-01-08T13:56:53.312+0000] {processor.py:161} INFO - Started process (PID=1883) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:53.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:56:53.323+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:53.323+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:53.883+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:56:53.901+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:53.901+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:56:53.919+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:56:53.919+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:56:53.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.631 seconds
+[2024-01-08T13:57:23.986+0000] {processor.py:161} INFO - Started process (PID=1942) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:23.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:57:23.989+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:23.989+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:24.594+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:24.613+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:24.612+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:57:24.632+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:24.632+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:57:24.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.667 seconds
+[2024-01-08T13:57:54.866+0000] {processor.py:161} INFO - Started process (PID=2001) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:54.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:57:54.901+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:54.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:55.523+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:57:55.546+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:55.545+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:57:55.573+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:57:55.573+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:57:55.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.729 seconds
+[2024-01-08T13:58:26.163+0000] {processor.py:161} INFO - Started process (PID=2060) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:26.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:58:26.166+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:26.165+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:26.698+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:26.714+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:26.714+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:58:26.735+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:26.735+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:58:26.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.600 seconds
+[2024-01-08T13:58:57.409+0000] {processor.py:161} INFO - Started process (PID=2119) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:57.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:58:57.413+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:57.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:57.942+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:58:57.960+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:57.959+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:58:57.979+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:58:57.979+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:58:57.995+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.589 seconds
+[2024-01-08T13:59:28.595+0000] {processor.py:161} INFO - Started process (PID=2178) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:59:28.596+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:59:28.598+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:59:28.598+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:59:29.106+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:59:29.122+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:59:29.121+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T13:59:29.140+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:59:29.140+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T13:59:29.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.564 seconds
+[2024-01-08T13:59:59.589+0000] {processor.py:161} INFO - Started process (PID=2237) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T13:59:59.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T13:59:59.592+0000] {logging_mixin.py:188} INFO - [2024-01-08T13:59:59.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T14:00:00.135+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T14:00:00.160+0000] {logging_mixin.py:188} INFO - [2024-01-08T14:00:00.159+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T14:00:00.185+0000] {logging_mixin.py:188} INFO - [2024-01-08T14:00:00.184+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T14:00:00.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.621 seconds
+[2024-01-08T14:00:30.883+0000] {processor.py:161} INFO - Started process (PID=2296) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T14:00:30.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-08T14:00:30.888+0000] {logging_mixin.py:188} INFO - [2024-01-08T14:00:30.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T14:00:31.629+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-08T14:00:31.653+0000] {logging_mixin.py:188} INFO - [2024-01-08T14:00:31.652+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-08T14:00:31.680+0000] {logging_mixin.py:188} INFO - [2024-01-08T14:00:31.680+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-06T00:00:00+00:00, run_after=2024-01-07T00:00:00+00:00
+[2024-01-08T14:00:31.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.820 seconds

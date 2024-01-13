@@ -1,18 +1,12 @@
 destination_table: alpine-life-350508.project_x_dwh.fact_b
 write_disposition: WRITE_TRUNCATE
-external_task_dependencies: [
-  {
-    "dag_id": "etl_to_datalake",
-    "task_id": "table_source_a",
-    "minute_delta": 120
-  },
-    {
-    "dag_id": "etl_to_datalake",
-    "task_id": "table_source_b",
-    "minute_delta": 120
-  }
-]
-internal_task_dependencies: [
-  'fact_a',
-  'fact_c'
-]
+external_task_dependencies:
+  - dag_id: etl_to_datalake
+    task_id: table_source_a
+    minute_delta: 120
+  - dag_id: etl_to_datalake
+    task_id: table_source_b
+    minute_delta: 120
+internal_task_dependencies:
+  - fact_a
+  - fact_c

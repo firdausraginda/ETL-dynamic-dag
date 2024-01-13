@@ -64,3 +64,17 @@ TypeError: unsupported operand type(s) for -: 'DateTime' and 'str'
 [2024-01-08T07:30:23.123+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_dwh, task_id=wait_etl_to_datalake_table_source_a, execution_date=20240107T020000, start_date=20240108T073022, end_date=20240108T073023
 [2024-01-08T07:30:23.159+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
 [2024-01-08T07:30:23.212+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-01-13T12:22:38.284+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-13T12:22:38.372+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [queued]>
+[2024-01-13T12:22:38.373+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-01-13T12:22:38.519+0000] {taskinstance.py:2192} INFO - Executing <Task(ExternalTaskSensor): wait_etl_to_datalake_table_source_a> on 2024-01-07 02:00:00+00:00
+[2024-01-13T12:22:38.562+0000] {standard_task_runner.py:60} INFO - Started process 472 to run task
+[2024-01-13T12:22:38.612+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_dwh', 'wait_etl_to_datalake_table_source_a', 'scheduled__2024-01-07T02:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_dwh.py', '--cfg-path', '/tmp/tmpiihlk40c']
+[2024-01-13T12:22:38.617+0000] {standard_task_runner.py:88} INFO - Job 90: Subtask wait_etl_to_datalake_table_source_a
+[2024-01-13T12:22:39.235+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_dwh.wait_etl_to_datalake_table_source_a scheduled__2024-01-07T02:00:00+00:00 [running]> on host cc6de2d520c9
+[2024-01-13T12:22:40.329+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_dwh' AIRFLOW_CTX_TASK_ID='wait_etl_to_datalake_table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-01-07T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-07T02:00:00+00:00'
+[2024-01-13T12:22:40.373+0000] {external_task.py:244} INFO - Poking for tasks ['table_source_a'] in dag etl_to_datalake on 2024-01-07T00:00:00+00:00 ... 
+[2024-01-13T12:22:40.495+0000] {base.py:293} INFO - Success criteria met. Exiting.
+[2024-01-13T12:22:40.544+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=etl_to_dwh, task_id=wait_etl_to_datalake_table_source_a, execution_date=20240107T020000, start_date=20240113T122238, end_date=20240113T122240
+[2024-01-13T12:22:40.773+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-13T12:22:40.886+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
