@@ -345,3 +345,10 @@ ImportError: cannot import name 'print_str' from 'test' (unknown location)
 [2024-01-13T12:24:46.854+0000] {logging_mixin.py:188} INFO - [2024-01-13T12:24:46.853+0000] {dag.py:3033} INFO - Sync 1 DAGs
 [2024-01-13T12:24:46.900+0000] {logging_mixin.py:188} INFO - [2024-01-13T12:24:46.899+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-13T00:00:00+00:00, run_after=2024-01-14T00:00:00+00:00
 [2024-01-13T12:24:46.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.946 seconds
+[2024-01-13T12:25:17.465+0000] {processor.py:161} INFO - Started process (PID=2188) to work on /opt/airflow/dags/etl_to_datalake.py
+[2024-01-13T12:25:17.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_to_datalake.py for tasks to queue
+[2024-01-13T12:25:17.472+0000] {logging_mixin.py:188} INFO - [2024-01-13T12:25:17.471+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-13T12:25:18.227+0000] {processor.py:840} INFO - DAG(s) 'etl_to_datalake' retrieved from /opt/airflow/dags/etl_to_datalake.py
+[2024-01-13T12:25:18.249+0000] {logging_mixin.py:188} INFO - [2024-01-13T12:25:18.249+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-01-13T12:25:18.277+0000] {logging_mixin.py:188} INFO - [2024-01-13T12:25:18.277+0000] {dag.py:3820} INFO - Setting next_dagrun for etl_to_datalake to 2024-01-13T00:00:00+00:00, run_after=2024-01-14T00:00:00+00:00
+[2024-01-13T12:25:18.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_to_datalake.py took 0.855 seconds
