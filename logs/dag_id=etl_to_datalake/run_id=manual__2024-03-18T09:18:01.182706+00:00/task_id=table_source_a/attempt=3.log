@@ -1,0 +1,34 @@
+[2024-03-18T09:28:09.110+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a manual__2024-03-18T09:18:01.182706+00:00 [queued]>
+[2024-03-18T09:28:09.126+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_to_datalake.table_source_a manual__2024-03-18T09:18:01.182706+00:00 [queued]>
+[2024-03-18T09:28:09.126+0000] {taskinstance.py:2171} INFO - Starting attempt 3 of 3
+[2024-03-18T09:28:09.148+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): table_source_a> on 2024-03-18 09:18:01.182706+00:00
+[2024-03-18T09:28:09.158+0000] {standard_task_runner.py:60} INFO - Started process 346 to run task
+[2024-03-18T09:28:09.166+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'etl_to_datalake', 'table_source_a', 'manual__2024-03-18T09:18:01.182706+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_datalake.py', '--cfg-path', '/tmp/tmp14uerwhq']
+[2024-03-18T09:28:09.173+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask table_source_a
+[2024-03-18T09:28:09.273+0000] {task_command.py:423} INFO - Running <TaskInstance: etl_to_datalake.table_source_a manual__2024-03-18T09:18:01.182706+00:00 [running]> on host bb65d6418542
+[2024-03-18T09:28:09.404+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_to_datalake' AIRFLOW_CTX_TASK_ID='table_source_a' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T09:18:01.182706+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-18T09:18:01.182706+00:00'
+[2024-03-18T09:28:09.452+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_to_datalake.py", line 76, in process_datalake
+    load_query_result_to_bq(dict_config["sql"], dict_config["write_disposition"],
+  File "/opt/airflow/dags/etl_to_datalake.py", line 56, in load_query_result_to_bq
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 42, in load_query_result_to_bq
+    bq_client = init_bq_client()
+  File "/opt/airflow/dags/etl_to_datalake.py", line 31, in init_bq_client
+    raise e
+  File "/opt/airflow/dags/etl_to_datalake.py", line 23, in init_bq_client
+    conn = Connection.get_connection_from_secrets(conn_id='dwh-creds')
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `dwh-creds` isn't defined
+[2024-03-18T09:28:09.459+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=etl_to_datalake, task_id=table_source_a, execution_date=20240318T091801, start_date=20240318T092809, end_date=20240318T092809
+[2024-03-18T09:28:09.476+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 33 for task table_source_a (The conn_id `dwh-creds` isn't defined; 346)
+[2024-03-18T09:28:09.504+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-18T09:28:09.529+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

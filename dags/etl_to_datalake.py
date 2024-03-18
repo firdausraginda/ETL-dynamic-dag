@@ -15,7 +15,6 @@ from airflow.models import Connection
 default_args = {
     'start_date': datetime(2024, 1, 6),
     'retries': 2,
-    'catchup': False,
     'depends_on_past': False}
 
 def init_bq_client():
@@ -82,6 +81,7 @@ with DAG(
     'etl_to_datalake',
     schedule_interval='@daily',
     default_args=default_args,
+    catchup=False,
     tags=['datalake']
     ) as dag:
 
