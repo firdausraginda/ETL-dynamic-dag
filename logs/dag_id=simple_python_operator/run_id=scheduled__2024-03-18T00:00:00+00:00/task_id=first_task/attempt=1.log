@@ -1,0 +1,122 @@
+[2024-03-19T04:31:41.422+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:31:41.471+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:31:41.472+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T04:31:41.613+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T04:31:41.682+0000] {standard_task_runner.py:60} INFO - Started process 109 to run task
+[2024-03-19T04:31:41.807+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmpnvd36_q_']
+[2024-03-19T04:31:41.846+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T04:31:42.289+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host 24bcbe611895
+[2024-03-19T04:31:42.926+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T04:31:42.966+0000] {logging_mixin.py:188} INFO - This message will shown in logs
+[2024-03-19T04:31:43.000+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T04:31:43.094+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T043141, end_date=20240319T043143
+[2024-03-19T04:31:43.217+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T04:31:43.317+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T04:46:22.754+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:46:22.771+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:46:22.771+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T04:46:23.090+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T04:46:23.109+0000] {standard_task_runner.py:60} INFO - Started process 74 to run task
+[2024-03-19T04:46:23.113+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmp5o2aonx1']
+[2024-03-19T04:46:23.117+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T04:46:23.177+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host 477536cb5a2a
+[2024-03-19T04:46:23.269+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T04:46:23.332+0000] {logging_mixin.py:188} INFO -                                msg
+0  This message will shown in logs
+[2024-03-19T04:46:23.333+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T04:46:23.342+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T044622, end_date=20240319T044623
+[2024-03-19T04:46:23.366+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T04:46:23.380+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T04:51:21.109+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:51:21.117+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T04:51:21.117+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T04:51:21.331+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T04:51:21.347+0000] {standard_task_runner.py:60} INFO - Started process 74 to run task
+[2024-03-19T04:51:21.351+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmpu_19aqjf']
+[2024-03-19T04:51:21.354+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T04:51:21.392+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host 23eba066b59e
+[2024-03-19T04:51:21.447+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T04:51:21.462+0000] {logging_mixin.py:188} INFO -                                msg
+0  This message will shown in logs
+[2024-03-19T04:51:21.463+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T04:51:21.473+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T045121, end_date=20240319T045121
+[2024-03-19T04:51:21.523+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T04:51:21.554+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T05:01:17.525+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T05:01:17.532+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T05:01:17.533+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T05:01:17.855+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T05:01:17.875+0000] {standard_task_runner.py:60} INFO - Started process 83 to run task
+[2024-03-19T05:01:17.879+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmpsg5uitz9']
+[2024-03-19T05:01:17.882+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T05:01:17.944+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host b9f187789895
+[2024-03-19T05:01:18.049+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T05:01:18.068+0000] {logging_mixin.py:188} INFO -                                msg
+0  This message will shown in logs
+[2024-03-19T05:01:18.068+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T05:01:18.080+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T050117, end_date=20240319T050118
+[2024-03-19T05:01:18.132+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T05:01:18.155+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T05:53:37.640+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T05:53:37.732+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T05:53:37.733+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T05:53:37.814+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T05:53:38.068+0000] {standard_task_runner.py:60} INFO - Started process 134 to run task
+[2024-03-19T05:53:38.164+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmpsggtbyje']
+[2024-03-19T05:53:38.179+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T05:53:38.853+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host 95b5966198df
+[2024-03-19T05:53:39.429+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T05:53:39.556+0000] {logging_mixin.py:188} INFO - shape: (1, 1)
+┌─────────────────────────────────┐
+│ msg                             │
+│ ---                             │
+│ str                             │
+╞═════════════════════════════════╡
+│ This message will shown in logs │
+└─────────────────────────────────┘
+[2024-03-19T05:53:39.565+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T05:53:39.611+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T055337, end_date=20240319T055339
+[2024-03-19T05:53:39.761+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T05:53:39.837+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T08:17:44.058+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T08:17:44.066+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T08:17:44.067+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T08:17:44.076+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T08:17:44.081+0000] {standard_task_runner.py:60} INFO - Started process 81 to run task
+[2024-03-19T08:17:44.086+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmp0e8zphqo']
+[2024-03-19T08:17:44.088+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T08:17:44.158+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host c2d6e17c1ed7
+[2024-03-19T08:17:44.239+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T08:17:44.254+0000] {logging_mixin.py:188} INFO - shape: (1, 1)
+┌─────────────────────────────────┐
+│ msg                             │
+│ ---                             │
+│ str                             │
+╞═════════════════════════════════╡
+│ This message will shown in logs │
+└─────────────────────────────────┘
+[2024-03-19T08:17:44.256+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T08:17:44.265+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T081744, end_date=20240319T081744
+[2024-03-19T08:17:44.298+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T08:17:44.316+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-03-19T12:02:04.909+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T12:02:04.914+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [queued]>
+[2024-03-19T12:02:04.914+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2024-03-19T12:02:04.921+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): first_task> on 2024-03-18 00:00:00+00:00
+[2024-03-19T12:02:04.925+0000] {standard_task_runner.py:60} INFO - Started process 72 to run task
+[2024-03-19T12:02:04.928+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simple_python_operator', 'first_task', 'scheduled__2024-03-18T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simple_python_op.py', '--cfg-path', '/tmp/tmp6uu1vqgp']
+[2024-03-19T12:02:04.929+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask first_task
+[2024-03-19T12:02:04.967+0000] {task_command.py:423} INFO - Running <TaskInstance: simple_python_operator.first_task scheduled__2024-03-18T00:00:00+00:00 [running]> on host feda30686b9b
+[2024-03-19T12:02:05.031+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='simple_python_operator' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-18T00:00:00+00:00'
+[2024-03-19T12:02:05.053+0000] {logging_mixin.py:188} INFO - shape: (1, 1)
+┌─────────────────────────────────┐
+│ msg                             │
+│ ---                             │
+│ str                             │
+╞═════════════════════════════════╡
+│ This message will shown in logs │
+└─────────────────────────────────┘
+[2024-03-19T12:02:05.055+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-03-19T12:02:05.063+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simple_python_operator, task_id=first_task, execution_date=20240318T000000, start_date=20240319T120204, end_date=20240319T120205
+[2024-03-19T12:02:05.102+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T12:02:05.115+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
