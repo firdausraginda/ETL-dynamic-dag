@@ -3,6 +3,7 @@ from airflow.models import DAG
 # Import the PythonOperator
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
+import pandas as pd
 
 # Define the default_args dictionary
 default_args = {
@@ -12,7 +13,8 @@ default_args = {
 }
 
 def print_string(message):
-    print(message)
+    df = pd.DataFrame(data={"msg": [message]})
+    print(df.head())
 
 with DAG(
     # Define DAG id
